@@ -1,6 +1,31 @@
 #include "main.h"
 
 /**
+ * print_alias - Print an alias string.
+ * @node: The alias node.
+ * Return: Always 0 on success, 1 on error.
+ */
+
+int print_alias(list_t *node)
+{
+    char *p = NULL, *a = NULL;
+
+    if (node)
+    {
+        p = _strchr(node->str, '='); /* A Comment here */
+        for (a = node->str; a <= p; a++)
+            _putchar(*a);
+
+        _putchar('\''); /* A Comment here */
+        _puts(p + 1);
+        _puts("'\n"); /* A Comment here */
+        return (0);
+    }
+
+    return (1);
+}
+
+/**
  * _myalias - Mimics the alias builtin (see 'man alias').
  * @info: Structure containing potential arguments.
  * Return: Always 0.
