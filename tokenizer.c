@@ -3,7 +3,7 @@
 /**
  * **strtow - splits a string into words. Repeat delimiters are ignored
  * @str: the input string parameters
- * @d: the delimeter string parameters
+ * @d: the delimeter string parameters.
  * Return: a pointer to an array of strings, or NULL on failure
  */
 
