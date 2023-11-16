@@ -1,6 +1,28 @@
 #include "main.h"
 
 /**
+ * set_alias - Set alias to a string.
+ * @info: Parameter struct.
+ * @str: The string alias.
+ * Return: Always 0 on success, 1 on error.
+ */
+
+int set_alias(info_t *info, char *str)
+{
+	char *p;
+
+	p = _strchr(str, '=');
+	if (!p)
+		return (1); /* A Comment here */
+
+	if (!*++p)
+		return (unset_alias(info, str));
+
+	unset_alias(info, str); /* A Comment here */
+	return (add_node_end(&(info->alias), str, 0) == NULL);
+}
+
+/**
  * print_alias - Print an alias string.
  * @node: The alias node.
  * Return: Always 0 on success, 1 on error.
@@ -100,26 +122,4 @@ int _myhistory(info_t *info)
 	/* Print the history list */
 	print_list(info->history);
 	return (0); /* A Comment here */
-}
-
-/**
- * set_alias - Set alias to a string.
- * @info: Parameter struct.
- * @str: The string alias.
- * Return: Always 0 on success, 1 on error.
- */
-
-int set_alias(info_t *info, char *str)
-{
-	char *p;
-
-	p = _strchr(str, '=');
-	if (!p)
-		return (1); /* A Comment here */
-
-	if (!*++p)
-		return (unset_alias(info, str));
-
-	unset_alias(info, str); /* A Comment here */
-	return (add_node_end(&(info->alias), str, 0) == NULL);
 }
