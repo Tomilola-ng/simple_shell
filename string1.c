@@ -2,7 +2,7 @@
 
 /**
  * _strcpy - copies a string parameters
- * @dest: the destination parameters
+ * @dest: the destination parameters.
  * @src: the source parameters
  *
  * Return: pointer to destination
