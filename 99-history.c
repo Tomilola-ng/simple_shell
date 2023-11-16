@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
  * build_history_list - Adds entry to a history linked list.

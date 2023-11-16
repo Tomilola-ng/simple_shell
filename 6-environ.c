@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
  * populate_env_list - Populates the environment linked list.

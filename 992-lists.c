@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
  * delete_node_at_index - Deletes a node at a given index

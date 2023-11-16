@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
  * sigintHandler - Blocks ctrl-C.

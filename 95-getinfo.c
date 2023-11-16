@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 void set_info(info_t *info, char **av)
 {

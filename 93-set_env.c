@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
  * _setenv - Initialize a new environment variable or modify an existing one.

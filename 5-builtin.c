@@ -1,4 +1,4 @@
-#include "shell.h"
+#include "main.h"
 
 /**
  * _myalias - Mimics the alias builtin (see 'man alias').
